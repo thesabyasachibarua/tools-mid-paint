@@ -16,20 +16,31 @@
             "part-3 part-3 part-4 part-4"
             ;
         }
+
+        @media screen and (max-width:640px) {
+            .custom-grid{
+                grid-template-areas: 
+                "part-1"
+                "part-2"
+                "part-3"
+                "part-4"
+                ;
+            }
+        }
     </style>
 </head>
 <body class="">
     <header class="bg-[#FEEDBC] pt-[60px]">
-        <div class="bg-white mb-[115px] h-[70px] w-[80%] m-auto rounded-[5000px] flex justify-center">
+        <div class= "sm: bg-white mb-[115px] h-[70px] w-[90%] m-auto rounded-[5000px] flex justify-center lg:w-[80%]">
             <img class="my-[10px]" src="./desktop/paint-logo.png" alt="">
         </div>
 
         <!-- banner part -->
 
-        <div class=" w-[80%] m-auto flex">
+        <div class="sm:w-[80%] m-auto flex flex-col-reverse lg:flex-row">
             <div class="w-[70%]">
-                <h2 class="text-3xl font-bold text-[#F9B800]">risus praesent vulputate.</h2>
-                <h1 class="text-7xl font-bold">Cursus Integer </h1> <h1 class="text-7xl font-bold border-r-5">Consequat Tristique.</h1> 
+                <h2 class="text-[2rem] font-bold text-[#F9B800]">risus praesent vulputate.</h2>
+                <h1 class="text-[4.5rem] font-bold">Cursus Integer </h1> <h1 class="text-[4.5rem] font-bold border-r-5">Consequat Tristique.</h1> 
                 <div class="mt-14 custom-grid">
                     <div class="bg-white rounded-[5000px] [grid-area:part-1] p-[14px]"><i class="text-[#F9B800]  fa-solid fa-circle-check"></i> Cursus Integer</div>
                     <div class="bg-white p-[14px] rounded-[5000px] [grid-area:part-2]"><i class="text-[#F9B800]  fa-solid fa-circle-check"></i> Cursus Integer</div>
@@ -38,8 +49,8 @@
                 </div>
                 <button class="mt-14 py-7 px-10 rounded-[5000px] bg-[#F9B800]">Lorem Ipsum &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
             </div>
-            <div>
-                <img src="./desktop/cover-paint.png" alt="">
+            <div class="w-[80%] place-self-center sm:w-[90%] lg:w-[50%]">
+                <img class="" src="./desktop/cover-paint.png" alt="">
             </div>
 
         </div>
