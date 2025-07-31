@@ -17,6 +17,19 @@
             ;
         }
 
+        .custom-layout{
+            display: grid;
+            gap: 60px;
+            /* grid-template-areas:
+            "box-1 box-1"
+            "box-2 box-3"
+            "box-2 box-3"
+            "box-4 box-4"
+            
+            ; */
+            grid-template-columns: repeat(2,1fr)
+        }
+
         @media screen and (max-width:640px) {
             .custom-grid{
                 grid-template-areas: 
@@ -30,7 +43,7 @@
     </style>
 </head>
 <body class="">
-    <header class="bg-[#FEEDBC] pt-[60px]">
+    <header class="bg-[#FEEDBC] pt-[60px] pb-56">
         <div class= "sm: bg-white mb-[115px] h-[70px] w-[90%] m-auto rounded-[5000px] flex justify-center lg:w-[80%]">
             <img class="my-[10px]" src="./desktop/paint-logo.png" alt="">
         </div>
@@ -47,7 +60,7 @@
                     <div class="bg-white p-[14px] rounded-[5000px] font-semibold text-[1.25rem] [grid-area:part-3]"><i class="text-[#F9B800]  fa-solid fa-circle-check"></i> Tellus Euismod Pellentesque</div>
                     <div class="bg-white p-[14px] rounded-[5000px] font-semibold text-[1.25rem] [grid-area:part-4]"><i class="fa-solid text-[#F9B800] fa-circle-check"></i> Aliquot Tristique</div>
                 </div>
-                <button class="text-[1.5rem] font-bold mt-14 py-7 px-10 rounded-[5000px] bg-[#F9B800]">Lorem Ipsum &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+                <button class="text-[1.5rem] font-bold mt-14 py-6 px-10 rounded-[5000px] bg-[#F9B800]">Lorem Ipsum &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
             </div>
             <div class="w-[80%] place-self-center sm:w-[40%] lg:w-[50%]">
                 <img class="" src="./desktop/cover-paint.png" alt="">
@@ -56,7 +69,46 @@
         </div>
     </header>
     <main>
-
+        <div class="bg-[#262626] pb-[380px]">
+        <section class="flex w-[80%] m-auto items-center pt-[165px]">
+            <div class="w-[53%]">
+                <p class="text-[#F9B800] mb-5">Quisque porttitor vitae vel amet neque scelerisque mattis. <br> Consectetur nibh velit magna consectetur leo. </p>
+                <h1 class="text-5xl font-bold mb-14 text-white">Cursus Integer Conseq
+Aliquam Tristique. </h1>
+                     <button class="text-[1.5rem] font-bold mt-14 py-6 px-10 rounded-[5000px] bg-white">Lorem Ipsum &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class=" custom-layout ">
+                <div class="border-2 rounded-[60px] p-10 [ grid-area:box-1] bg-white">
+                    <img class="mb-5" src="./desktop/icon-join.png" alt="">
+                    <h1 class="text-6xl font-bold mb-2.5">1 <span class="text-[#F9B800]">.</span></h1>
+                    <h4 class="text-2xl font-bold mb-5">Phasellus Vitae</h4>
+                    <h5 class="text-[20px] font-semibold">Quisque</h5>
+                    <p>Porttitor vitae vel amet </p>
+                </div>
+                <div class="bg-[#F9B800] translate-y-[120px] border-2 rounded-[60px] p-10 [ grid-area:box-2]">
+                    <img class="mb-5" src="./desktop/icon-join.png" alt="">
+                    <h1 class="text-6xl font-bold mb-2.5">2 <span class="text-[#F9B800]">.</span></h1>
+                    <h4 class="text-2xl font-bold mb-5">Phasellus Vitae</h4>
+                    <h5 class="text-[20px] font-semibold">Quisque</h5>
+                    <p>Porttitor vitae vel amet </p>
+                </div>
+                <div class="bg-[#F9B800] border-2 rounded-[60px] p-10 [ grid-area:box-3]">
+                    <img class="mb-5" src="./desktop/icon-join.png" alt="">
+                    <h1 class="text-6xl font-bold mb-2.5">3 <span class="text-[#F9B800]">.</span></h1>
+                    <h4 class="text-2xl font-bold mb-5">Phasellus Vitae</h4>
+                    <h5 class="text-[20px] font-semibold">Quisque</h5>
+                    <p>Porttitor vitae vel amet </p>
+                </div>
+                <div class="bg-white translate-y-[120px] border-2 rounded-[60px] p-10 [ grid-area:box-4]">
+                    <img class="mb-5" src="./desktop/icon-join.png" alt="">
+                    <h1 class="text-6xl font-bold mb-2.5">4 <span class="text-[#F9B800]">.</span></h1>
+                    <h4 class="text-2xl font-bold mb-5">Phasellus Vitae</h4>
+                    <h5 class="text-[20px] font-semibold">Quisque</h5>
+                    <p>Porttitor vitae vel amet </p>
+                </div>
+            </div>
+        </section>
+        </div>
     </main>
     <footer>
 
